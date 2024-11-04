@@ -7,7 +7,9 @@
     --Transparent_white: hsla(0, 0%, 100%, 0.75);
     /* (paragraphs) */
     --Very_light_gray: hsl(0, 0%, 95%);
+    
     /* (background, headings, buttons) */
+    /* Supuestamente las variables NO deben contener MAYUSCULAS, a mi me funcionan igual-----BUENAS PRÁCTICAS?????---------  */
 }
 *{
     margin: 0;
@@ -29,7 +31,7 @@ main{
     flex-direction: column;
     /* align-items: center; */
     /* margin: 88px 23px; */
-    margin: 88px auto;
+    margin: 88px auto 40px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -43,15 +45,19 @@ img{
 }
 h1{
     font-family: "Big Shoulders Display", sans-serif;
-    font-size: 34px;
+    /* font-size: 34px; */
+    font-size: 2.4em;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--Very_light_gray);
-    margin-bottom: 38px;
+    /* margin-bottom: 38px; */
+    margin-bottom: 25px;
+    /* Hay que tener en cuenta el espacio que genera el line-height de <p>. Se ha restado la mitad del line-height. */
 }
 p{
     color: var(--Transparent_white);
     /* line-height: 15px; */
+    line-height: 25px;
     margin-bottom: 26px;
 }
 .button a{
@@ -102,7 +108,7 @@ color: var(--Bright_orange);
 }
 
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:944px) {
     main{
         /* width: fit-content; */
         /* 3x442px */
@@ -118,9 +124,7 @@ color: var(--Bright_orange);
         font-size: 36px;
     }
     p{
-        line-height: 25px;
         /* margin-bottom: 85px; */
         margin-bottom: 70px;
-    }
-    
+    }   
 }
