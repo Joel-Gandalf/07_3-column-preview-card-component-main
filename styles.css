@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+    /* (paragraphs) */
+    --Very_light_gray: hsl(0, 0%, 95%);
+    /* (background, headings, buttons) */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: "Lexend Deca", serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: var(--Very_light_gray);
+}
+main{
+    width: fit-content;
+    /* width: 327px; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin: 88px 23px; */
+    margin: 88px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+section{
+    width: 327px;
+    height: 442px;
+    padding: 48px 54px 46px 48px;
+}
+img{
+    margin-bottom: 40px;
+}
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--Very_light_gray);
+    margin-bottom: 38px;
+}
+p{
+    color: var(--Transparent_white);
+    /* line-height: 15px; */
+    margin-bottom: 26px;
+}
+.button a{
+    width: 148px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--Very_light_gray);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button a:hover{
+    background-color: unset;
+    color: var(--Very_light_gray);
+    border: 2px solid var(--Very_light_gray);
+}
+
+/* --------------------------SECTION1------------------------- */
+.section1{
+    background-color: var(--Bright_orange);
+}
+.section1 a{
+color: var(--Bright_orange);
+}
+/* --------------------------SECTION2------------------------- */
+.section2{
+    background-color: var(--Dark_cyan);
+}
+.section2 a{
+    color: var(--Dark_cyan);
+}
+
+/* --------------------------SECTION3------------------------- */
+.section3{
+    background-color: var(--Very_dark_cyan);
+}
+.section3 a{
+    color: var(--Very_dark_cyan);
+}
+/* --------------------------FOOTER------------------------- */
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (min-width:1200px) {
+    main{
+        /* width: fit-content; */
+        /* 3x442px */
+        height: 100%;
+        flex-direction: row;
+        margin: 170px auto 40px;
+    }
+    section{
+        width: 308px;
+        height: 501px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    p{
+        line-height: 25px;
+        /* margin-bottom: 85px; */
+        margin-bottom: 70px;
+    }
+    
+}
